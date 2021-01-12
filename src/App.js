@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import { Component } from 'react';
 
-function App() {
-  return (
+class App extends Component {
+  state = {
+    show: true
+  }
+
+  toggle = () => {
+    this.setState({show:!this.state.show})
+  }
+
+  render(){
+
+    let files=null;
+
+    if(this.state.show){
+      files= (
+      <ul>
+      <li>File1</li>
+      <li>File2</li>
+      <li>File3</li>
+      </ul>
+      );
+    }
+
+    return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Home</p>
+        <button onClick={this.toggle}>Toggle</button>
+          {files}
       </header>
     </div>
   );
+  }
 }
 
 export default App;
