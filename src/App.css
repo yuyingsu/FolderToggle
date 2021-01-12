@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,6 +14,8 @@
   }
 }
 
+=======
+>>>>>>> e8ce65212724050e8134bb8a47588948834e3a6c
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,6 +26,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+<<<<<<< HEAD
 
 .App-link {
   color: #61dafb;
@@ -36,3 +40,5 @@
     transform: rotate(360deg);
   }
 }
+=======
+>>>>>>> e8ce65212724050e8134bb8a47588948834e3a6c
